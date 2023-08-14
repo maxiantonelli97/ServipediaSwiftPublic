@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Xzq-2p-9Y6">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Resultados-->
+        <scene sceneID="Dbr-ul-akj">
+            <objects>
+                <viewController id="Xzq-2p-9Y6" customClass="ListaViewController" customModule="servipedia" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uC6-Zp-vId">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="220" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="dUl-Zg-epf">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <color key="backgroundColor" systemColor="tertiaryLabelColor"/>
+                                <color key="separatorColor" systemColor="tertiaryLabelColor"/>
+                                <color key="sectionIndexBackgroundColor" systemColor="tertiaryLabelColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="a0u-9j-k8S"/>
+                        <color key="backgroundColor" systemColor="labelColor"/>
+                        <constraints>
+                            <constraint firstItem="dUl-Zg-epf" firstAttribute="top" secondItem="a0u-9j-k8S" secondAttribute="top" id="JyC-bb-Ln8"/>
+                            <constraint firstItem="dUl-Zg-epf" firstAttribute="trailing" secondItem="a0u-9j-k8S" secondAttribute="trailing" id="Z8a-kd-jIp"/>
+                            <constraint firstItem="dUl-Zg-epf" firstAttribute="bottom" secondItem="a0u-9j-k8S" secondAttribute="bottom" id="nj0-nQ-4B7"/>
+                            <constraint firstItem="dUl-Zg-epf" firstAttribute="leading" secondItem="a0u-9j-k8S" secondAttribute="leading" id="p8w-AK-3do"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Resultados" id="QU1-pq-j0p"/>
+                    <connections>
+                        <outlet property="tableView" destination="dUl-Zg-epf" id="MeE-rz-Ngd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="em5-Nc-TzM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1628" y="-349"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tertiaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29803921568627451" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
